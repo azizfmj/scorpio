@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+video{max-width:100%;
+height:auto;}
+table,th,td{border:6px solid black; width:60%;height:60px; text-align:center;font-size:20}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+#pfont{font-size:30px; font-family:Lucida Console}
+#pfont2{font-size:22px; font-family:Lucida Console}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.iframe1{
+  overflow: hidden;
+ /* 16:9 aspect ratio */
+ padding-top: 56.25%;
+ position: relative;}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><img src="k.jpg"><br>SCORPIO KWT</b></h3>
+  </div>
+  <div class="w3-bar-block">
+   <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#about us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a>
+    <a href="#best seller" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Best seller</a>
+    <a href="#offer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Offer</a>
+    <a href="#hoodies" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hoodies</a> 
+    <a href="#t-shirts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">T-shirts</a> 
+    <a href="#cap" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Caps</a> 
+    <a href="#masks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Masks</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#location" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Location</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  
+<span>SCORPIO KWT</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="home">
+    <h1 class="w3-jumbo"><b>SCORPIO KWT</b></h1>
+    <p id="pfont"><strong>Welcome to SCORPIO KWT clothing retailer. Shop at our website with ease. If you do not find any of the designs that are shown in our shop to your liking, you are welcome to contact us and ask for a custom-made item of your choosing. We are pleased to announce that we started making mask designs and are open for order.</strong></p>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="o1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="o2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="im.jpg" style="width:100%" onclick="onClick(this)" alt="offer">
+    </div>
+
+    <div class="w3-half">
+      <img src="f1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="f2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="f3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+  <!-- about us -->
+  <div class="w3-container" id="about us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>About us</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p id="pfont2"><strong>SCORPIO KWT was founded in 2019 by two friends, We started out our company in our own homes and worked using one printing machine and delivering all the items ourselves. Now we have our own shop and a lot of helpers and we deliver to all of Kuwait. SCORPIO KWT designs and prints on a variety of clothing items including masks. The clothing that is sold at our company is made from 100% pure cotton and of high quality. We guarantee that all clothing material is waterproof, and the colour prints are waterproof and fireproof, which means that the quality will not be ruined when using a washing machine. Our company can provide custom made prints on any type of clothing, which includes hoodies, T-shirts, caps, and masks. We also deliver to every city in Kuwait and we ensure a fast delivery service.</strong></p>
+
+  </div>
+  
+  <!-- best seller -->
+
+  <div class="w3-container" id="best seller" style="margin-top:75px">
+
+    <h1 class="w3-xxxlarge w3-text-black"><b>Best seller</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+      
+<center>
+<video width="600" controls>
+<source src="v.mp4" type="video/mp4">
+<source src="v.ogg" type="video/ogg">
+</video><center>
+
+    
+  </div>
+
+
+
+
+
+  <!-- offer -->
+  <div class="w3-container" id="offer" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Offer</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+ <div style="overflow-x:auto;">    
+<center>
+<table>
+
+<tr>
+<td></td>
+<td><img src="ms.jpg"width="150" height="150"></td>
+<td><img src="mt.jpg"width="150" height="150"></td>
+<td><img src="c5.jpg"width="150" height="150"></td>
+</tr>
+
+<tr>
+<td>Before</td>
+<td>15KD</td>
+<td>5KD</td>
+<td>6KD</td>
+</tr>
+<tr>
+<td>after</td>
+<td>10KD</td>
+<td>3KD</td>
+<td>4KD</td>
+</tr>
+</table>
+</center>
+</div>
+</div>
+
+
+
+
+
+    <!-- hoodies -->
+  <div class="w3-container" id="hoodies" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Hoodies</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p></p>
+    <p>
+    </p>
+    <p><b></b></p>
+  </div>
+
+  <!-- hp -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="h1.jpeg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Black hoodie</h3>
+          <p class="w3-opacity">Just eat it nike logo,pizza hoodie</p>
+          <p>15KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="h2.jpeg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Black hoodie</h3>
+          <p class="w3-opacity">Astronaut with a text i nead more space hoodie</p>
+          <p>15KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="h3.jpeg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Black hoodie</h3>
+          <p class="w3-opacity">Black hoodie with text"never mind"</p>
+          <p>15KD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- t-shirts -->
+  <div class="w3-container" id="t-shirts" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>T-shirts</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p></p>
+    <p></p>
+    <p><b></b></p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="t1.jpeg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Black t-shirt</h3>
+          <p class="w3-opacity">Samuel L Jackson t-shirt</p>
+          <p>10KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="t2.jpeg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Black t-shirt</h3>
+          <p class="w3-opacity">Marilyn Monroe t-shirt</p>
+          <p>10KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="t3.jpeg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Black t-shirt</h3>
+          <p class="w3-opacity">Central perk t-shirt</p>
+          <p>10KD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- caps -->
+  <div class="w3-container" id="cap" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>caps</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>
+    </p>
+    <p><b></b></p>
+  </div>
+
+  <!-- cp -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="c1.jpeg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>cap</h3>
+          <p class="w3-opacity">Black cap with a text" Just eat it"pizza nike logor</p>
+          <p>6KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="c2.jpeg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>cap</h3>
+          <p class="w3-opacity">Black cap with drake logo</p>
+          <p>6KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="c3.jpeg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>cap</h3>
+          <p class="w3-opacity">Black cap with donut</p>
+          <p>6KD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- masks -->
+  <div class="w3-container" id="masks" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Masks</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p></p>
+    <p>
+    </p>
+    <p><b></b></p>
+  </div>
+
+  <!-- mp -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="m1.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>mask</h3>
+          <p class="w3-opacity">Black mask with a text "WILL ONLY REMOVE FOR COFFEE"</p>
+          <p>5KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="m2.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>mask</h3>
+          <p class="w3-opacity">Black mask with yellow covid-19 logo</p>
+          <p>5KD</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="m3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>mask</h3>
+          <p class="w3-opacity">Black mask with green covid-19 logo</p>
+          <p>5KD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p></p>
+<center>
+<addres>
+visit us at:
+crystal tower in Kuwait city <br>
+Get In Touch:<br> 
+instgram:scorpio.kwt<br>
+Tel: +965 9890 2000<br>
+</addres>
+</center>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-black w3-margin-bottom">Send Message</button>
+    </form> 
+<footer><p>This website has been desined by Abdulaziz<br>
+<a href="aziz.fmj23@gmail.com">aziz.fmj23@gmail.com</a></p>
+</footer> 
+  </div>
+
+<!-- location -->
+  <div class="w3-container" id="location" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Location</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+<div class="iframe1">
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.7774283299073!2d47.9801668849265!3d29.37680548213006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf84ec642b4d1d%3A0xcd3a672913267155!2z2KjYsdisINin2YTZg9ix2YrYs9iq2KfZhA!5e0!3m2!1sar!2skw!4v1608559947771!5m2!1sar!2skw" width="1000" height="1000" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </center>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
